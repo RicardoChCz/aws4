@@ -341,5 +341,6 @@ RequestSigner.prototype.formatPath = function() {
 aws4.RequestSigner = RequestSigner
 
 aws4.sign = function(request, credentials) {
+  console.log("Test change")
   return new RequestSigner(request, credentials).sign()
 }
